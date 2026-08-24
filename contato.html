@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebeca Pereira Rodrigues — Contato</title>
+  <meta name="description" content="Fale com Rebeca Pereira Rodrigues.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="editor-window">
+    <div class="title-bar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span class="path">rebeca-portfolio — contato</span>
+      <button id="theme-toggle" class="theme-toggle" type="button">modo: escuro</button>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <nav class="tab-bar" id="tab-bar">
+        <a class="tab" href="sobre.html"><span class="dot"></span>sobre</a>
+        <a class="tab" href="formacao.html"><span class="dot"></span>formacao</a>
+        <a class="tab" href="index.html"><span class="dot"></span>portfolio</a>
+        <a class="tab active" href="contato.html"><span class="dot"></span>contato</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="tab-bar">menu ☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section>
+        <p class="section-label">contato</p>
+        <h1 style="margin-bottom: 16px;">Vamos conversar</h1>
+        <p style="max-width: 60ch;">
+          Estou disponível para novas oportunidades e conexões na área de
+          tecnologia. Envie uma mensagem pelo formulário abaixo ou use um dos
+          canais diretos.
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== CANAIS DIRETOS ===================== -->
+      <section>
+        <div class="contact-info">
+          <a href="mailto:rebecapereira383@gmail.com">rebecapereira383@gmail.com</a>
+          <span>(44) 99803-1249</span>
+          <a href="https://linkedin.com/in/rebeca-pereira-713875219" target="_blank" rel="noopener">linkedin.com/in/rebeca-pereira-713875219 ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">github.com ↗</a>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== FORMULÁRIO DE CONTATO ===================== -->
+      <section>
+        <p class="section-label">formulário</p>
+        <h2>Envie uma mensagem</h2>
+
+        <!-- 
+          Formulário validado em JavaScript (script.js):
+          - nome, e-mail e mensagem são obrigatórios
+          - o e-mail precisa ter um formato válido (usuario@dominio.com)
+          - o envio é simulado (não há back-end real nesta atividade)
+        -->
+        <form id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo">
+            <p class="field-error" id="name-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="voce@exemplo.com">
+            <p class="field-error" id="email-error"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+            <p class="field-error" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn-primary">Enviar mensagem</button>
+
+          <p class="form-feedback" id="form-feedback" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Rebeca Pereira Rodrigues</p>
+      <p>Paranavaí, PR</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebeca Pereira Rodrigues — Sobre mim</title>
+  <meta name="description" content="Portfólio pessoal de Rebeca Pereira Rodrigues, estudante de Análise e Desenvolvimento de Sistemas.">
+
+  <!-- Fontes: Space Grotesk (títulos), Inter (texto), JetBrains Mono (labels/código) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== JANELA DO EDITOR / MENU ===================== -->
+  <header class="editor-window">
+    <div class="title-bar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span class="path">rebeca-portfolio — sobre.html</span>
+      <button id="theme-toggle" class="theme-toggle" type="button">modo: escuro</button>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <!-- Menu principal: mesmo em todas as páginas -->
+      <nav class="tab-bar" id="tab-bar">
+        <a class="tab active" href="sobre.html"><span class="dot"></span>sobre</a>
+        <a class="tab" href="formacao.html"><span class="dot"></span>formacao</a>
+        <a class="tab" href="index.html"><span class="dot"></span>portfolio</a>
+        <a class="tab" href="contato.html"><span class="dot"></span>contato</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="tab-bar">menu ☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <!-- ===================== HERO / APRESENTAÇÃO ===================== -->
+      <!-- Sem foto, conforme pedido — a "gutter" imita números de linha de um editor de código -->
+      <section class="hero">
+        <div class="gutter" aria-hidden="true">01<br>02<br>03<br>04</div>
+        <div class="hero-content">
+          <p class="kicker">const desenvolvedora = "Rebeca Pereira Rodrigues";<span class="cursor"></span></p>
+          <h1>Suporte técnico por profissão,<br>desenvolvimento por vocação.</h1>
+          <p class="lead">
+            Olá! Sou estudante de Análise e Desenvolvimento de Sistemas e atuo hoje
+            com suporte técnico e infraestrutura de redes. Estou construindo, passo a
+            passo, o caminho para trabalhar diretamente com desenvolvimento de sistemas.
+          </p>
+
+          <div class="socials">
+            <a href="https://github.com/rebecapereirarehb" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/in/rebeca-pereira-713875219" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="contato.html">Contato →</a>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== INTERESSES EM TECNOLOGIA ===================== -->
+      <section>
+        <p class="section-label">interesses</p>
+        <h2>O que me move na área de TI</h2>
+        <p style="margin-bottom: 20px;">
+          Tenho interesse especial em desenvolvimento de sistemas, programação,
+          banco de dados e infraestrutura de redes — uma combinação que nasceu da
+          minha rotina no suporte técnico e cresceu com os estudos na faculdade.
+        </p>
+        <div class="tag-list">
+          <span class="tag">Desenvolvimento de sistemas</span>
+          <span class="tag">Programação</span>
+          <span class="tag">Banco de dados</span>
+          <span class="tag">Infraestrutura de redes</span>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== ROTINA ATUAL ===================== -->
+      <section>
+        <p class="section-label">rotina atual</p>
+        <h2>No dia a dia</h2>
+        <p>
+          Atualmente, trabalho como Suporte Técnico Nível 1, realizando atendimento
+          técnico remoto e presencial, diagnóstico de falhas de conectividade,
+          configuração de IP e suporte aos serviços DHCP e DNS. É um trabalho que me
+          aproxima bastante da parte prática de redes — e que reforça, todos os dias,
+          minha vontade de ir além e programar as soluções que hoje só configuro.
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== HOBBIES ===================== -->
+      <section>
+        <p class="section-label">fora do trabalho</p>
+        <h2>Hobbies</h2>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Jogos</h3>
+            <p>Gosto de jogar nos momentos livres — é onde relaxo e recarrego as energias.</p>
+          </div>
+          <div class="card">
+            <h3>Músicas &amp; séries</h3>
+            <p>Ouvir música e assistir séries fazem parte da minha rotina de descanso.</p>
+          </div>
+          <div class="card">
+            <h3>Estudar tecnologia</h3>
+            <p>Gosto de estudar novas ferramentas e linguagens por conta própria, além da faculdade.</p>
+          </div>
+          <div class="card">
+            <h3>Aprendizado contínuo</h3>
+            <p>Estou sempre testando algo novo — este próprio portfólio é parte desse processo.</p>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== OBJETIVO PROFISSIONAL ===================== -->
+      <section>
+        <p class="section-label">objetivo</p>
+        <h2>Para onde eu quero ir</h2>
+        <p>
+          Meu objetivo é atuar na área de tecnologia da informação, contribuindo para
+          o desenvolvimento e a manutenção de sistemas e para a criação de soluções
+          eficientes — unindo minha base prática em redes com o conhecimento que
+          venho construindo em programação.
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===================== RODAPÉ ===================== -->
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Rebeca Pereira Rodrigues</p>
+      <p>Paranavaí, PR</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

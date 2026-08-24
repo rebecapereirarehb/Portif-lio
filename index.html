@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rebeca Pereira Rodrigues — Portfólio</title>
+  <meta name="description" content="Projetos e repositório GitHub de Rebeca Pereira Rodrigues.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="editor-window">
+    <div class="title-bar">
+      <div class="dots"><span></span><span></span><span></span></div>
+      <span class="path">rebeca-portfolio — portfolio</span>
+      <button id="theme-toggle" class="theme-toggle" type="button">modo: escuro</button>
+    </div>
+
+    <div style="display:flex; align-items:center; justify-content:space-between;">
+      <nav class="tab-bar" id="tab-bar">
+        <a class="tab" href="sobre.html"><span class="dot"></span>sobre</a>
+        <a class="tab" href="formacao.html"><span class="dot"></span>formacao</a>
+        <a class="tab active" href="index.html"><span class="dot"></span>portfolio</a>
+        <a class="tab" href="contato.html"><span class="dot"></span>contato</a>
+      </nav>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-expanded="false" aria-controls="tab-bar">menu ☰</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+
+      <section>
+        <p class="section-label">portfólio</p>
+        <h1 style="margin-bottom: 16px;">Meus projetos</h1>
+        <p style="max-width: 60ch;">
+          Nesta seção apresento projetos e trabalhos desenvolvidos durante minha
+          formação e meus estudos na área de tecnologia. Todo o código está
+          disponível publicamente no meu GitHub.
+        </p>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== GITHUB ===================== -->
+      <section>
+        <p class="section-label">repositórios</p>
+        <h2>GitHub</h2>
+        <div class="project-card">
+          <div class="project-head">
+            <h3>Meu GitHub</h3>
+            <a class="project-link" href="https://github.com/rebecapereirarehb" target="_blank" rel="noopener">Acessar meu GitHub ↗</a>
+          </div>
+          <p>
+            Reúne os códigos, atividades e projetos desenvolvidos durante meu
+            processo de aprendizagem em programação — incluindo o código-fonte
+            deste próprio portfólio.
+          </p>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== PROJETO EM DESTAQUE ===================== -->
+      <section>
+        <p class="section-label">projeto em destaque</p>
+        <h2>Sistema de Cadastro — GOES</h2>
+        <div class="project-card">
+          <div class="project-head">
+            <h3>Sistema de gestão para ONG (Python + SQLite + Tkinter)</h3>
+          </div>
+          <p style="margin-bottom: 14px;">
+            Sistema desktop completo desenvolvido como Atividade Extensionista da
+            faculdade para o Grupo Gotas de Esperança (GOES), ONG de Paranavaí-PR
+            onde atuei como educadora social. A aplicação organiza o dia a dia da
+            instituição em um único lugar.
+          </p>
+          <p style="margin-bottom: 14px;">
+            <strong style="color: var(--text);">Módulos desenvolvidos:</strong>
+            cadastro de assistidos, visitas domiciliares, entrega de cestas
+            básicas, eventos, controle de presença, encaminhamentos e geração de
+            relatórios.
+          </p>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">Tkinter</span>
+          </div>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <!-- ===================== ESTE PORTFÓLIO ===================== -->
+      <section>
+        <p class="section-label">também neste repositório</p>
+        <h2>Este portfólio</h2>
+        <div class="project-card">
+          <div class="project-head">
+            <h3>Portfólio pessoal — HTML, CSS e JavaScript puros</h3>
+          </div>
+          <p>
+            As 4 páginas que você está navegando agora foram construídas do zero,
+            sem frameworks, como Atividade Prática da disciplina de Fundamentos da
+            Programação Web (UNINTER). Inclui validação de formulário, menu
+            responsivo e alternância entre tema claro e escuro, tudo em
+            JavaScript puro.
+          </p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© 2026 Rebeca Pereira Rodrigues</p>
+      <p>Paranavaí, PR</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
